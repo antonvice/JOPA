@@ -1,20 +1,34 @@
+# Python/runtime
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
 *.egg-info/
-.venv/
-.claude/
 dist/
 build/
+wheels/
+
+# Local environments and editor state
+.venv/
+.env
+.env.*
+.claude/
 .marimo/
 __marimo__/
-
-# Generated outputs and model weights
-outputs/*.png
-outputs/*.gif
-outputs/*.mp4
-outputs/*.html
-checkpoints/*.npz
-checkpoints/*.pkl
-scripts/
 .DS_Store
+
+# Local datasets and generated experiment outputs
+data/
+outputs/
+!outputs/.gitkeep
+
+# Local-only notes/drafts
+docs/albert_issue_draft_pusht_visual_block.md
+docs/local_multimodal_surprise_roadmap.md
+docs/so101_two_block_research_notes.md
 docs/index.html
+
+# Scratch scripts
+scripts/
